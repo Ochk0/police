@@ -1,0 +1,132 @@
+.logo {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .driver-form input {
+    width: 100%;
+  }
+  
+  .driver-form div {
+    margin-bottom: 20px;
+  }
+  
+  .driver-form button {
+    -webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    background: #2f3192;
+    color: #fff;
+    width: 60%;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  
+  .driver-form button:hover {
+    color: #2f3192;
+    background: #fafafa;
+  }
+  
+  .heading {
+    min-height: 60px;
+    line-height: 60px;
+    background: #2f3192;
+  }
+  
+  .heading h2 {
+    line-height: 60px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  .main-nav a {
+    color: #fff;
+    margin-right: 20px;
+  }
+  
+  .card {
+    min-height: 300px;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  
+  .card .img-holder {
+    height: 233px;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./bg_xee.gif) repeat;
+  }
+  
+  .card:hover .img-holder {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    min-height: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    border-top: 1px solid #eee;
+  }
+  .card-body h5 {
+    margin-bottom: 0;
+  }
+  
+  .wanted-container {
+    border: 1px solid #2f3192;
+  }
+  
+  body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2f3192;
+    color: white;
+    text-align: left;
+  }
+  
+  .label
+  {
+      font-weight: bold;
+  }
+  .imageClass
+  {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .textboxstyle
+      {
+          margin-top: 23px;
+      }
+  .labelstyle
+      {
+          margin-left: -140px;
+          position: fixed;
+      }
+  
+  .captchaLabel{
+      margin-left: 10px;
+  }
+  
+  .detailHeader{
+      text-align: center;
+      border: thin;
+  }

@@ -1,0 +1,338 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Цагдаагийн ерөнхий газар
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap-4.3.1.css" rel="stylesheet">
+    <link href="./all.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="icon" type="image/gif/png" href="./mouse_select_left.png">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Oswald|Roboto+Condensed&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-57713073-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-57713073-1');
+    </script>
+
+    <link
+        href="/WebResource.axd?d=HnVj3p4MfL8gExOlcR6IG7Jx-iI5XP7zhlt_63gh_k6i096jnuRn72xtQNfJFbiXtjy7wH70yACmX-2mB_uJzUNsZ2M6Ajz3x-gvarye54ke1yy2SvuaZocCJqV9tHXrjavXBA2&amp;t=635603347760000000"
+        type="text/css" rel="stylesheet" class="Telerik_stylesheet">
+    <link
+        href="/WebResource.axd?d=83gNm4Kzj1jDh6HntbkypZ3P6TJsMB7XTYExJ4LPwWj-9oYA5h4cu_nBWkUCk5ll6so0sF1xDEmo-3wHcoPB_vQmJRPl_WRZsuR5vlOVCFVmHy9Gm06Cb3haWn5ZBmOIozrdhW8jydjE50hg0tPN9IZn-n6SYeyYO0Cs3VPnUQbbinzs0&amp;t=635603347760000000"
+        type="text/css" rel="stylesheet" class="Telerik_stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="mazaalai">
+        <div class="popover" id="_mazaalaiPopoverWindow" style="display: none;"> </div>
+    </div>
+    <form name="aspnetForm" method="get" action="doCheckDriver.html" onsubmit="javascript:return WebForm_OnSubmit();"
+        id="aspnetForm">
+        <div>
+            <input type="hidden" name="ctl00_ContentPlaceHolder1_RadScriptManager1_TSM"
+                id="ctl00_ContentPlaceHolder1_RadScriptManager1_TSM"
+                value=";;System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:mn-MN:2fba8926-93b2-4b4a-84f7-f7d34ee7b7a5:ea597d4b:b25378d2;Telerik.Web.UI, Version=2015.1.225.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4:mn-MN:bec96118-5d75-4175-a4eb-c2b0edcf532a:16e4e7cd:11e117d7:f7645509:24ee1bba:6d43f6d9">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="/wEPDwUKMTE3MDQyNzIwNQ9kFgJmD2QWAgIDD2QWBAIBDw8WAh4ISW1hZ2VVcmwFHH4vQXNzZXRzL2ltYWdlcy9lbmctZmxhZy5wbmdkZAIFD2QWAgIBD2QWBAIJDxQrAAMPFgYeFUVuYWJsZUVtYmVkZGVkU2NyaXB0c2ceElJlc29sdmVkUmVuZGVyTW9kZQspclRlbGVyaWsuV2ViLlVJLlJlbmRlck1vZGUsIFRlbGVyaWsuV2ViLlVJLCBWZXJzaW9uPTIwMTUuMS4yMjUuMzUsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49MTIxZmFlNzgxNjViYTNkNAEeF0VuYWJsZUFqYXhTa2luUmVuZGVyaW5naGQWAh4LQ3VycmVudEd1aWQFJGQwNzY0Mzk4LWNiODAtNDQ3Ny05ZWFmLTc2MDBmYjJlNjg2MRQrAANkZGQWAgIBD2QWDGYPZBYCZg9kFghmDw8WCh4GSGVpZ2h0GwAAAAAAAElAAQAAAB4FV2lkdGgbAAAAAACAZkABAAAAHghDc3NDbGFzc2UfAAVcfi9UZWxlcmlrLldlYi5VSS5XZWJSZXNvdXJjZS5heGQ/dHlwZT1yY2EmaXNjPXRydWUmZ3VpZD1kMDc2NDM5OC1jYjgwLTQ0NzctOWVhZi03NjAwZmIyZTY4NjEeBF8hU0ICggNkZAIBDw8WAh4EVGV4dAUi0JfRg9GA0LPQsNC9INC60L7QtNGL0LMg0YHQvtC70LjRhRYCHgV0aXRsZQUi0JfRg9GA0LPQsNC9INC60L7QtNGL0LMg0YHQvtC70LjRhWQCAg8WBB4JaW5uZXJodG1sBQ5HZXQgQXVkaW8gQ29kZR4EaHJlZgVkfi9UZWxlcmlrLldlYi5VSS5XZWJSZXNvdXJjZS5heGQ/dHlwZT1jYWgmYW1wO2lzYz10cnVlJmFtcDtndWlkPWQwNzY0Mzk4LWNiODAtNDQ3Ny05ZWFmLTc2MDBmYjJlNjg2MWQCAw8WBB8LBRNEb3dubG9hZCBBdWRpbyBDb2RlHwwFZH4vVGVsZXJpay5XZWIuVUkuV2ViUmVzb3VyY2UuYXhkP3R5cGU9Y2FoJmFtcDtpc2M9dHJ1ZSZhbXA7Z3VpZD1kMDc2NDM5OC1jYjgwLTQ0NzctOWVhZi03NjAwZmIyZTY4NjFkAgEPDxYKHwUbAAAAAAAASUABAAAAHwYbAAAAAACAZkABAAAAHwdlHwAFXH4vVGVsZXJpay5XZWIuVUkuV2ViUmVzb3VyY2UuYXhkP3R5cGU9cmNhJmlzYz10cnVlJmd1aWQ9ZDA3NjQzOTgtY2I4MC00NDc3LTllYWYtNzYwMGZiMmU2ODYxHwgCggNkZAICDxYEHwsFDkdldCBBdWRpbyBDb2RlHwwFZH4vVGVsZXJpay5XZWIuVUkuV2ViUmVzb3VyY2UuYXhkP3R5cGU9Y2FoJmFtcDtpc2M9dHJ1ZSZhbXA7Z3VpZD1kMDc2NDM5OC1jYjgwLTQ0NzctOWVhZi03NjAwZmIyZTY4NjFkAgMPFgQfCwUTRG93bmxvYWQgQXVkaW8gQ29kZR8MBWR+L1RlbGVyaWsuV2ViLlVJLldlYlJlc291cmNlLmF4ZD90eXBlPWNhaCZhbXA7aXNjPXRydWUmYW1wO2d1aWQ9ZDA3NjQzOTgtY2I4MC00NDc3LTllYWYtNzYwMGZiMmU2ODYxZAIED2QWAmYPFgQfCgUXTWlzc2luZyBCcm93c2VyIFBsdWctSW4fCwUXTWlzc2luZyBCcm93c2VyIFBsdWctSW5kAgUPZBYEZg8PFgofBwUfdmFsaWRhdGVbcmVxdWlyZWRdIGZvcm0tY29udHJvbB4JQWNjZXNzS2V5ZR4IVGFiSW5kZXgBAAAeB1Rvb2xUaXBlHwgCAmRkAgEPDxYGHwdlHwkFNtCX0YPRgNCz0LDQvSDQtNGN0Y3RgNGFINC60L7QtNGL0LMg0L7RgNGD0YPQu9C90LAg0YPRgx8IAgJkZAILDzwrAAQBAA8WCB8BZx4cRW5hYmxlRW1iZWRkZWRCYXNlU3R5bGVzaGVldGcfAgsrBAIfA2gWAh4Kb25rZXlwcmVzcwVAcmV0dXJuIGNvbnRyb2xFbnRlcignY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9idG5DaGVjaycsIGV2ZW50KWQYAgUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgMFEmN0bDAwJEltYWdlQnV0dG9uMQUlY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRSYWRDYXB0Y2hhMQUiY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRidG5DaGVjawUlY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRSYWRDYXB0Y2hhMQ8UKwACBSRkMDc2NDM5OC1jYjgwLTQ0NzctOWVhZi03NjAwZmIyZTY4NjEGAAAAAAAAAABkJRjz4MfjPLIUCfkoOFtZx3whcU0=">
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['aspnetForm'];
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+//]]>
+        </script>
+
+
+        <script
+            src="/WebResource.axd?d=rSqQGKIEu0qaEhcd4IYnD1YnT93w7cftgEp068eaFw1xyIeXpD-GlB8uU9EpGHG1bVzxn9EVuQnunfLMqU3HWfw0YCA1&amp;t=636040748080000000"
+            type="text/javascript"></script>
+
+
+        <script
+            src="/ScriptResource.axd?d=uQ-3FnxbGhhUHzISyREe96na14yS26Y74XjswroZU8nTtg0iNBUt7wlzZJfiRfT4SSObC0Ty4GYzCUCV5RdIs1iPD5gNVdY7j0wGhKqZER6MIiVp5tvR4aaOC4fXbF7Q6u0S_92sCHnltaK4OQFT0dodtvM1&amp;t=7fa214bb"
+            type="text/javascript"></script>
+        <script
+            src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_ContentPlaceHolder1_RadScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d3.5.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3amn-MN%3a2fba8926-93b2-4b4a-84f7-f7d34ee7b7a5%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c+Version%3d2015.1.225.35%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3amn-MN%3abec96118-5d75-4175-a4eb-c2b0edcf532a%3a16e4e7cd%3a11e117d7%3af7645509%3a24ee1bba%3a6d43f6d9"
+            type="text/javascript"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function WebForm_OnSubmit() {
+                if (typeof (ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+                return true;
+            }
+//]]>
+        </script>
+
+        <div>
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="31F69910">
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="/wEWBwLR9Oz/CALssvLQAwLbvozHCAKRivzqBgKv3s3WDAKCsYyiAgKv3s3WDBbQjMWoPQmDgcxv7cQJy6wLw0W+">
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container" align="left">
+                    <div class="centered">
+                        <a href="index.aspx">
+                            <img src="./logo.png" width="70rem" height="70rem" class="logoIndex"
+                                style="margin-right: 1rem">
+                        </a>
+                        <a class="navbar-brand" href="main.html">
+                            <strong> ЦАГДААГИЙН ЕРӨНХИЙ ГАЗАР</strong><strong> </strong> <br>
+                            SERVICE INFORMATION SYSTEM </a>
+
+
+                    </div>
+                    <div class="main-nav">
+                        <input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1"
+                            src="./eng-flag.png" style="height:18px;border-width:0px;"> &nbsp; &nbsp;
+                        &nbsp;
+                        <a href="contact.aspx"><i class=""> <img style="width: 16px;" src="./phone-call.png" alt=""></i>
+                            &nbsp; <span id="ctl00_LicenseNumber">Холбоо
+                                барих</span></a>
+                    </div>
+
+
+                </div>
+            </nav>
+
+
+
+
+            <link href="./bootstrap11.css" rel="stylesheet">
+            <link href="./style11.css" rel="stylesheet">
+
+
+
+            <style>
+                body {
+                    font-family: 'Roboto Condensed', sans-serif;
+
+                }
+
+                .auto-style1 {
+                    width: 443px;
+                }
+            </style>
+
+
+
+            <div onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ContentPlaceHolder1_btnCheck')">
+
+                <script type="text/javascript">
+                    //<![CDATA[
+                    Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$RadScriptManager1', document.getElementById('aspnetForm'));
+                    Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ContentPlaceHolder1$RadCaptcha1$ctl01'], ['ctl00$ContentPlaceHolder1$RadCaptcha1$CaptchaLinkButton'], [], 90);
+   //]]>
+                </script>
+
+                <div class="container">
+                    <div class="row"></div>
+                </div>
+                <div id="main-content">
+                    <div class="wrapper">
+                        <div class="homepage applyForm">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 element-wrap">
+
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading" style="text-align:center">
+                                            <h3 class="panel-title"
+                                                style="font-family: 'Oswald', cursive; font-size: 18px">
+                                                <span id="ctl00_ContentPlaceHolder1_Label1">ЖОЛООДОХ ЭРХИЙН МЭДЭЭЛЭЛ
+                                                    ЛАВЛАХ</span>
+                                            </h3>
+
+                                        </div>
+                                        <div class="panel-body">
+
+                                            <input type="hidden">
+                                            <div class="form-group">
+                                                <label for="register_number" class="col-sm-3 control-label">
+                                                    <span id="ctl00_ContentPlaceHolder1_Label2">Регистрийн дугаар</span>
+                                                </label>
+                                                <div class="col-sm-8">
+                                                    <input id="tbRegistryNumber" class="validate[required] form-control"
+                                                        placeholder="Регистрын дугаар" type="text"
+                                                        name="tbRegistryNumber">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="license_number" class="col-sm-3 control-label">
+                                                    <span id="ctl00_ContentPlaceHolder1_Label3">Жолооны үнэмлэхний
+                                                        дугаар</span>
+                                                </label>
+
+                                                <div class="col-sm-8">
+
+                                                    <input id="tbLicenseNumber" class="validate[required] form-control"
+                                                        placeholder="Жолооны үнэмлэх № " type="text"
+                                                        name="tbLicenseNumber">
+
+                                                    <div id="ctl00_ContentPlaceHolder1_RadCaptcha1"
+                                                        class="RadCaptcha RadCaptcha_Default">
+                                                        <!-- 2015.1.225.35 --><span
+                                                            id="ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00"
+                                                            style="color:Red;visibility:hidden;">Баталгаажуулах код
+                                                            буруу байна</span>
+                                                        <div
+                                                            id="ctl00_ContentPlaceHolder1_RadCaptcha1_SpamProtectorPanel">
+                                                            <div id="ctl00_ContentPlaceHolder1_RadCaptcha1_ctl01">
+                                                                <img id="ctl00_ContentPlaceHolder1_RadCaptcha1_CaptchaImageUP"
+                                                                    alt=""
+                                                                    src="Telerik.Web.UI.WebResource.jpeg"
+                                                                    style="height:50px;width:180px;border-width:0px;display:block;"><a
+                                                                    id="ctl00_ContentPlaceHolder1_RadCaptcha1_CaptchaLinkButton"
+                                                                    class="rcRefreshImage" title="Зурган кодыг солих"
+                                                                    href="#"
+                                                                    style="display:block;">Зурган кодыг солих</a>
+                                                            </div>
+                                                            <p><input
+                                                                    name="ctl00$ContentPlaceHolder1$RadCaptcha1$CaptchaTextBox"
+                                                                    type="text" maxlength="5"
+                                                                    id="ctl00_ContentPlaceHolder1_RadCaptcha1_CaptchaTextBox"
+                                                                    class="validate[required] form-control"
+                                                                    autocomplete="off"><label
+                                                                    for="ctl00_ContentPlaceHolder1_RadCaptcha1_CaptchaTextBox"
+                                                                    id="ctl00_ContentPlaceHolder1_RadCaptcha1_CaptchaTextBoxLabel"
+                                                                    style="font-weight:normal;">Зурган дээрх кодыг
+                                                                    оруулна уу</label></p>
+                                                        </div><input
+                                                            id="ctl00_ContentPlaceHolder1_RadCaptcha1_ClientState"
+                                                            name="ctl00_ContentPlaceHolder1_RadCaptcha1_ClientState"
+                                                            type="hidden" autocomplete="off">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div style="justify-content: center; align-items: center">
+
+                                                <div class="form-group">
+                                                    <div class="col-sm-3">&nbsp;
+
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <button type="submit" id="ctl00_ContentPlaceHolder1_btnCheck"
+                                                            class="btn btn-outline-secondary"
+                                                            tabindex="0"><span class="rbText">ШАЛГАХ</span><input
+                                                                id="ctl00_ContentPlaceHolder1_btnCheck_ClientState"
+                                                                name="ctl00_ContentPlaceHolder1_btnCheck_ClientState"
+                                                                type="hidden" autocomplete="off"></button>
+                                                        <span id="ctl00_ContentPlaceHolder1_lblStatus"
+                                                            style="color:Red;"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+
+
+
+
+
+
+    <div class="footer">
+        &nbsp;&nbsp; <span id="ctl00_txtICTC">Мэдээллийн технологи, холбооны төв</span>
+
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>2023
+    </div>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var Page_Validators = new Array(document.getElementById("ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00"));
+//]]>
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00 = document.all ? document.all["ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00"] : document.getElementById("ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00");
+        ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00.errormessage = "Баталгаажуулах код буруу байна";
+        ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00.validationGroup = "CaptchaValidation";
+        ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+    </script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+
+        var Page_ValidationActive = false;
+        if (typeof (ValidatorOnLoad) == "function") {
+            ValidatorOnLoad();
+        }
+
+        function ValidatorOnSubmit() {
+            if (Page_ValidationActive) {
+                return ValidatorCommonOnSubmit();
+            }
+            else {
+                return true;
+            }
+        }
+        Sys.Application.initialize();
+
+        document.getElementById('ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00').dispose = function () {
+            Array.remove(Page_Validators, document.getElementById('ctl00_ContentPlaceHolder1_RadCaptcha1_ctl00'));
+        }
+        Sys.Application.add_init(function () {
+            $create(Telerik.Web.UI.RadCaptcha, { "_audioUrl": "/Telerik.Web.UI.WebResource.axd?type=cah&isc=true&guid=d0764398-cb80-4477-9eaf-7600fb2e6861", "_enableAudio": false, "_persistCode": false, "clientStateFieldID": "ctl00_ContentPlaceHolder1_RadCaptcha1_ClientState" }, null, null, $get("ctl00_ContentPlaceHolder1_RadCaptcha1"));
+        });
+        Sys.Application.add_init(function () {
+            $create(Telerik.Web.UI.RadButton, { "_accessKey": "", "_hasIcon": false, "_hasImage": false, "_isClientSubmit": false, "_isImageButton": false, "_postBackReference": "WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions('ctl00$ContentPlaceHolder1$btnCheck', '', true, 'CaptchaValidation', '', false, false))", "_renderMode": 2, "_validationGroup": "CaptchaValidation", "clientStateFieldID": "ctl00_ContentPlaceHolder1_btnCheck_ClientState", "groupName": "GroupName1", "iconData": {}, "imageData": {}, "text": "ШАЛГАХ", "toggleStatesData": [], "uniqueGroupName": "ctl00$ContentPlaceHolder1$GroupName1", "uniqueID": "ctl00$ContentPlaceHolder1$btnCheck" }, null, null, $get("ctl00_ContentPlaceHolder1_btnCheck"));
+        });
+//]]>
+    </script>
+
+
+
+</body>
+
+</html>
